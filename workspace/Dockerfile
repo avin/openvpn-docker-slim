@@ -11,9 +11,6 @@ ADD run.sh /tmp/
 
 # Setup openvpn keys
 WORKDIR /etc/openvpn
-RUN openvpn --genkey --secret ovpn.key && \
-    mkdir /data/keys -p && \
-    chmod 600 ovpn.key && \
-    cp /etc/openvpn/ovpn.key /data/keys/
+RUN openvpn --genkey --secret ovpn.key
 
 CMD /tmp/run.sh

@@ -1,0 +1,14 @@
+version: '2'
+services:
+  main:
+    build:
+      context: ./workspace                      
+      dockerfile: "Dockerfile"    
+    ports:
+      - 1194:1194
+    privileged: true
+    cap_add:
+      - ALL
+    volumes:
+      - /lib/modules:/lib/modules
+      - ./keys:/data/keys
