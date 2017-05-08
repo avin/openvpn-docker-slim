@@ -1,0 +1,1 @@
+docker run --privileged --cap-add=ALL -v /dev:/dev -v /lib/modules:/lib/modules -v $(pwn)/keys:/tmp/keys -it vpn /bin/sh
