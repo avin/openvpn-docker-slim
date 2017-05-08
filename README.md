@@ -14,7 +14,7 @@ Install `docker`, `docker-compose`, `git`
 
 Clone repository
 ```
-mkdir /opt && cd /opt
+mkdir /opt -p && cd /opt
 git clone https://github.com/avin/openvpn-docker-slim.git
 ``` 
 

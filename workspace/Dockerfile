@@ -8,6 +8,7 @@ RUN apk update && \
 # Add files to container
 ADD openvpn.conf /etc/openvpn/
 ADD run.sh /tmp/
+RUN chmod 777 /tmp/run.sh
 
 # Setup openvpn keys
 WORKDIR /etc/openvpn
