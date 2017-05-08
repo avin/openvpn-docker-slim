@@ -1,4 +1,4 @@
-# Docker 3proxy slim container
+# Docker OpenVPN slim container
 OpenVPN docker container based on alpine
 
 ## Build & run
